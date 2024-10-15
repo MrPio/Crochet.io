@@ -1,0 +1,25 @@
+#logo {
+    /*float: left;*/
+    /*width: 468px;*/
+    /*height: 60px;*/
+    color: var(--on_background);
+    font-family: flamenco_regular, serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-out ;
+}
+#logo:hover {
+    transform: scale(1.1);
+}
+
+#logo p {
+    margin-left: 15px;
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: var(--on_background);
+}

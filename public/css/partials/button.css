@@ -1,0 +1,58 @@
+/* NORMALE ====================================== */
+.button_black, .button_white, .button_red {
+    width: 140px;
+    height: 44px;
+    border: none;
+    user-select: none;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: var(--font_small);
+    font-family: montserrat_regular, serif;
+}
+
+.button_white {
+    background-color: var(--color5);
+    color: var(--on_background);
+    border: 1px solid var(--color5);
+}
+
+.button_black {
+    background-color: var(--on_background);
+    color: var(--color5);
+}
+
+.button_red {
+    background-color: var(--error);
+    color: var(--color5);
+}
+
+.button_black p, .button_red p {
+    color: var(--color5);
+}
+
+/* ============================================== */
+
+
+/* ACTIVE ======================================= */
+.button_white:active, .button_black:active, .button_red:active {
+    background-color: var(--color5);
+    border: 1px solid var(--on_background);
+    color: var(--on_background);
+}
+
+.button_red:active {
+    border: 1px solid var(--error);
+}
+
+.button_red:active p {
+    color: var(--error);
+}
+
+.button_black:active p {
+    color: var(--on_background);
+}
+
+/* ============================================== */

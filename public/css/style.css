@@ -1,0 +1,181 @@
+@import "misc/ripple.css";
+@import "configurations/fonts.css";
+@import "configurations/root.css";
+@import "layouts/navbar.css";
+@import "partials/logo.css";
+@import "partials/button.css";
+@import "misc/grid_layout.css";
+@import "misc/hover_animation.css";
+@import "misc/shadow.css";
+@import "partials/paginator.css";
+@import "misc/not_selectable.css";
+@import "misc/scale_animation.css";
+@import "layouts/sidebar.css";
+
+#row, .row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.h_center{
+    justify-content: center;
+    text-align: center;
+}
+
+.deleted{
+    text-decoration: line-through;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: montserrat_light, serif;
+    background-color: var(--on_background);
+}
+
+h1 {
+    margin: 0;
+    font-size: xxx-large;
+    font-family: montserrat_bold, serif;
+    color: var(--on_background);
+}
+
+h2 {
+    margin: 0;
+    font-size: x-large;
+    font-family: montserrat_bold, serif;
+    color: var(--on_background);
+}
+
+h3 {
+    margin: 0;
+    font-family: montserrat_bold, serif;
+    color: var(--on_background);
+}
+p, b, strong{
+    color: var(--on_background);
+}
+
+textarea.error{
+    border: 2px solid crimson;
+    outline: none;
+}
+
+textarea.error:focus{
+    border: 2px solid crimson;
+    outline: none;
+}
+
+input.error{
+    border: 2px solid crimson;
+    outline: none;
+}
+input.error:focus{
+    border: 3px solid crimson;
+    outline: none;
+}
+
+label{
+    border: none;
+    padding: 15px;
+    border-radius: 999px;
+    font-family: montserrat_regular, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+textarea{
+    border: none;
+    padding: 15px;
+    font-family: montserrat_regular, serif;
+    font-size: medium;
+}
+
+input {
+    border: none;
+    padding: 15px;
+    border-radius: 999px;
+    font-family: montserrat_regular, serif;
+    font-size: medium;
+}
+
+.clickable{
+    pointer-events: auto;
+}
+
+select{
+    background-color: var(--color5);
+    border: none;
+    padding: 15px;
+    border-radius: 999px;
+    font-family: montserrat_regular, serif;
+    font-size: medium;
+}
+
+option{
+    background-color: var(--color5);
+    border: none;
+    padding: 15px;
+    border-radius: 999px;
+    font-family: montserrat_regular, serif;
+    font-size: medium;
+}
+
+img{
+    user-select: none;
+    pointer-events: none;
+}
+
+#page {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.padding {
+    padding: 10px var(--page_padding) 0 var(--page_padding);
+}
+
+
+#block_purple {
+    height: 75px;
+    padding: 100px var(--page_padding) 0 var(--page_padding);
+    /*background-color: var(--color2);*/
+    float: left;
+}
+
+#top_block {
+    /*height: 440px;*/
+    padding: 0 0 70px 0;
+    border-bottom-left-radius: var(--corner_radius);
+    background: var(--foreground) url(../images/geometric001.png) no-repeat right top;
+    background-size: 360px;
+}
+
+#line_image {
+    height: 4px;
+    width: 100%;
+    margin: auto -100px;
+    top: 0;
+    bottom: 0;
+}
+
+
+.round_rectangle{
+    border-radius: 999px;
+    background: var(--color5);
+}
+
+a{
+    color: #05b1d3;
+}
+

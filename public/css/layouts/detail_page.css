@@ -1,0 +1,129 @@
+.detail_page--container {
+    display: grid;
+    margin: 50px 0 0 0;
+    grid-template-columns: auto auto;
+    grid-gap: 60px;
+    overflow: hidden;
+}
+
+.detail_page--container strong {
+    font-family: montserrat_regular, serif;
+}
+
+#detail_page--image, #detail_page--company {
+    display: flex;
+    border-radius: 20px;
+    min-width: 240px;
+    max-width: 460px;
+    max-height: 460px;
+    border: var(--color5) solid 20px;
+    background-color: var(--color5);
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#detail_page--company {
+    margin-top: 60px;
+    margin-bottom: -10px;
+    max-width: 100%;
+    height: 140px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+#detail_page--image img, #detail_page--company img {
+    margin: auto 0;
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+}
+
+.detail_page--category {
+    color: var(--on_background);
+}
+
+.detail_page--edit_container {
+    position: absolute;
+    right: 0
+}
+
+.detail_page--header {
+    margin: 30px 0;
+    font-size: large;
+    position: relative;
+}
+
+
+#detail_page--side_bar {
+    position: relative;
+}
+
+.detail_page--title {
+    font-size: xx-large;
+    font-family: montserrat_bold, serif;
+}
+
+.detail_page--expired {
+    text-decoration: line-through;
+}
+
+.detail_page--subtitle {
+    margin-left: 20px;
+    font-size: xx-large;
+    font-family: montserrat_regular, serif;
+}
+
+.detail_page--description {
+    font-size: large;
+}
+
+.detail_page--place {
+    font-size: large;
+    font-family: montserrat_regular, serif;
+    margin: 0 0 0 10px;
+}
+
+.detail_page--line {
+    width: 100%;
+    margin: 30px 0;
+    height: 10px;
+}
+
+.detail_page--new_price, .detail_page--old_price, .detail_page--discount {
+    margin: 8px 0;
+}
+
+.detail_page--old_price {
+    font-size: x-large;
+    text-decoration: line-through;
+    font-family: montserrat_regular, serif;
+}
+
+.detail_page--new_price {
+    font-size: xxx-large;
+    font-family: montserrat_bold, serif;
+}
+
+.detail_page--discount {
+    font-size: xx-large;
+    color: var(--color2);
+    font-family: montserrat_bold, serif;
+    text-align: center;
+    margin: auto 0 auto 8px;
+}
+
+.detail_page--buttons_container {
+    margin-top: 40px;
+}
+
+.detail_page--top_container {
+    margin: 40px 0 20px 0;
+    justify-content: center;
+}

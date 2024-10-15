@@ -1,0 +1,192 @@
+/* MANAGEMENT: admin */
+.content-container {
+    /*padding: 6em;*/
+}
+
+.image-container {
+    width: var(--image-container-size);
+    height: var(--image-container-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
+}
+
+.fade-row {
+    opacity: 0.5;
+}
+
+.row-value {
+    font-weight: bold;
+}
+
+.search-bar {
+
+}
+
+.item-container {
+
+}
+
+.company-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1em;
+}
+
+.company-row {
+    padding: 2em;
+    margin-top: 1em;
+    border-radius: 1em;
+    background-color: var(--color7);
+    display: flex;
+}
+
+.left-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.right-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: 2em;
+}
+
+.company-info td:first-child {
+    text-align: right;
+}
+
+.company-info table {
+    font-size: large;
+    border-collapse: separate;
+    border-spacing: 0.4em;
+}
+
+.company-name {
+    font-weight: bold;
+}
+
+.button-container {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    margin: 0.5em;
+    background-color: var(--on_background);
+    border-radius: 50%;
+}
+
+.edit-button-container:hover {
+    animation: editAnimation 0.1s;
+    animation-fill-mode: forwards;
+}
+
+.delete-button-container:hover {
+    animation: deleteAnimation 0.1s;
+    animation-fill-mode: forwards;
+}
+
+.item-image-fixed-height {
+    height: var(--image-size);
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.item-image-fixed-width {
+    width: var(--image-size);
+    height: auto;
+    max-height: 100%;
+    display: block;
+}
+
+.man-pagination {
+    margin-top: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.man-pagination div {
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.man-pagination a{
+    font-size: x-large;
+    text-decoration: none;
+    color: var(--on_background);
+}
+
+.man-pagination a:hover{
+    text-decoration: underline;
+}
+
+.man-pagination input{
+    border: none;
+    width: 3em;
+    padding: 0.2em;
+    border-radius: 1em;
+    font-family: montserrat_regular, serif;
+    background-color: var(--background);
+    font-size: x-large;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.man-pagination input:focus{
+    outline: 1px solid var(--on_background);
+}
+
+.svg-change-page {
+    fill: var(--on_background);
+    transform-origin: center center;
+}
+
+.svg-change-page:hover {
+    transform: scale(1.2);
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-object {
+    padding: 0.5em;
+}
+
+.delete-object {
+    padding: 0.5em;
+}
+
+.delete-object form{
+    margin: 0;
+}
+
+.edit-object svg{
+    fill: var(--background);
+    transform-origin: center center;
+}
+
+.delete-object svg{
+    fill: var(--background);
+    transform-origin: center center;
+}
+
+@keyframes editAnimation {
+    0% { background-color: var(--on_background)}
+    100% { background-color: rgb(0, 0, 255, 0.7); transform: scale(1.1)}
+}
+
+@keyframes deleteAnimation {
+    0% { background-color: var(--on_background)}
+    100% { background-color: rgb(255, 0, 0, 0.7); transform: scale(1.1)}
+}

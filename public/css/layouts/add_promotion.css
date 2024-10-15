@@ -1,0 +1,109 @@
+/*Style tab bar*/
+
+.add_edit_navbar--container {
+    width: 100%;
+    margin-left: 150px;
+
+}
+
+.promozione_add_edit--tab_content {
+    width: 100%;
+    border-top: none;
+    background-color: var(--background);
+}
+
+.promozione_add_edit--form_container {
+    display: flex;
+    overflow: hidden;
+    padding-right: 2px;
+}
+
+.promozione_add_edit--form_container form {
+    width: 100%;
+}
+
+.promozione_add_edit--form {
+    height: auto;
+    display: flex;
+    padding: 10px 0;
+    justify-content: flex-start;
+}
+
+.promozione_add_edit--form select {
+    flex: 1;
+    background-color: var(--color5);
+    border-radius: 999px;
+    padding: 12px 15px;
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+    text-align: center;
+}
+
+.promozione_add_edit--form label {
+    min-width: 220px;
+    padding: 0;
+    margin: auto 0
+}
+
+.promozione_add_edit--form input {
+    flex: 1;
+    background-color: var(--color5);
+    border-radius: 999px;
+    padding: 12px 15px;
+    width: 100%;
+    text-align: center;
+    min-width: 200px;
+    height: 100%;
+}
+
+.promozione_add_edit--form textarea {
+    flex: 1;
+    background-color: var(--color5);
+    border-radius: 16px;
+    resize: none;
+    padding: 12px 40px;
+    width: 50%;
+    min-width: 200px;
+    height: 150px;
+}
+
+.promozione_add_edit--form button {
+    margin-top: 1.5em;
+}
+
+
+.promozione_add_edit--row,.promozione_add_edit--row4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    width: 100%;
+}
+.promozione_add_edit--row4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.promozione_add_edit--col{
+    width: 100%;
+}
+.promozione_add_edit--product_image_container{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+}
+
+.promozione_add_edit--product_image_container img{
+    display: flex;
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100px;
+}
+
+.hidden-container {
+    display: none;
+}
