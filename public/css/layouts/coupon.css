@@ -16,7 +16,7 @@
 
 .coupon_page--subtitle,.coupon_page--subtitle_li, .coupon_page--subtitle_li a {
     margin-top: 50px;
-    color: var(--color5);
+    color: var(--background);
     text-align: center;
     font-size: x-large;
 }
@@ -33,7 +33,7 @@
 }
 
 .coupon_page--title {
-    color: var(--color5);
+    color: var(--background);
     text-align: center;
 
 }

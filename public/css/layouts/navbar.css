@@ -17,13 +17,7 @@
 
 #navbar li {
     float: left;
-    height: 50px;
-    transition: transform 0.3s ease-out;
-}
-
-#navbar li:hover {
-    transform: scale(1.1);
-}
+    height: 50px;}
 
 #navbar a {
     display: block;

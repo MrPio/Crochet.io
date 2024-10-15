@@ -19,8 +19,22 @@
 @font-face {
     font-family: flamenco_regular;
     src: url(../../font/flamenco-regular.ttf);
+    font-weight: 400;
 }
 @font-face {
     font-family: flamenco_light;
     src: url(../../font/flamenco-light.ttf);
+    font-weight: 300;
+}
+
+/* PlaywriteGBS  FLAMENCO =================================*/
+@font-face {
+    font-family: PlaywriteGBS;
+    src: url(../../font/PlaywriteGBS-VariableFont_wght.ttf);
+}
+
+/* RobotoSlab =================================*/
+@font-face {
+    font-family: RobotoSlab;
+    src: url(../../font/RobotoSlab-VariableFont_wght.ttf);
 }

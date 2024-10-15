@@ -16,8 +16,8 @@
     min-width: 240px;
     max-width: 460px;
     max-height: 460px;
-    border: var(--color5) solid 20px;
-    background-color: var(--color5);
+    border: var(--background) solid 20px;
+    background-color: var(--background);
     align-items: center;
     justify-content: center;
     margin-top: 20px;

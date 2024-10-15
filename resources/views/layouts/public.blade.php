@@ -10,7 +10,7 @@
         <div id="row">
 
             {{-- Logo --}}
-            <div id="logo" onclick="window.location='{{@route('home')}}'">
+            <div id="logo" class="clickable" onclick="window.location='{{@route('home')}}'">
                 <img src="{{asset('images/logo-2.png')}}" alt="website logo" style="width: 4rem">
                 <p>Fili di<br>passione</p>
             </div>

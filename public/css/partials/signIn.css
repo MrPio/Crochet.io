@@ -52,7 +52,7 @@
 }
 
 input.login--white, select.login--white{
-    background-color: var(--color5);
+    background-color: var(--background);
 }
 
 
@@ -70,7 +70,7 @@ input.login--white, select.login--white{
 
 button.login--ghost {
     background-color: transparent;
-    border-color: var(--color5);
+    border-color: var(--background);
 }
 
 
@@ -149,7 +149,7 @@ button.login--ghost {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
-    color: var(--color5);
+    color: var(--background);
     position: relative;
     left: -100%;
     height: 100%;

@@ -1,7 +1,0 @@
-.scale_animation{
-    transition: transform 80ms ease-in;
-}
-
-.scale_animation:active  {
-    transform: scale(0.95);
-}

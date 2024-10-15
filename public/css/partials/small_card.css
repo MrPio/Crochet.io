@@ -17,12 +17,12 @@
 }
 
 .small_card--text{
-    background-color: var(--color5);
+    background-color: var(--background);
 }
 
 .small_card--text_active{
     background-color: var(--color2);
-    color: var(--color5);
+    color: var(--background);
 }
 
 /*.small_card--text:hover, .small_card--text_active:hover {*/

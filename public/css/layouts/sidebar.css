@@ -117,7 +117,7 @@ div#man-sidebar {
 
 div.man-header {
     position: relative;
-    background-color: var(--color5);
+    background-color: var(--background);
     width: auto;
     padding: 0 6em;
 }

@@ -2,7 +2,7 @@
     width: 320px;
     height: 400px;
     border-radius: 26px;
-    background-color: var(--color5);
+    background-color: var(--background);
     display: grid;
     grid-template-rows: 50% 50%;
     overflow: hidden;

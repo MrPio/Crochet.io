@@ -37,12 +37,12 @@
 }
 
 .man_card--container h2{
-    color: var(--color5);
+    color: var(--background);
     user-select: none;
 }
 
 .man_card--container p{
-    color: var(--color5);
+    color: var(--background);
     user-select: none;
 }
 

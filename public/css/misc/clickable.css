@@ -1,0 +1,11 @@
+.clickable{
+    transition: transform 0.225s ease-out ;
+}
+
+.clickable:hover {
+    transform: scale(1.1);
+}
+
+.clickable:active  {
+    transform: scale(1);
+}

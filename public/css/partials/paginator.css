@@ -23,12 +23,12 @@
 }
 
 .paginator--number{
-    background-color: var(--color5);
+    background-color: var(--background);
 }
 
 .paginator--number_active{
     background-color: var(--color2);
-    color: var(--color5);
+    color: var(--background);
 }
 
 .paginator--number:hover, .paginator--number_active:hover {

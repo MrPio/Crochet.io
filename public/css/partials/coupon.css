@@ -32,7 +32,7 @@
 
 
 .scadenza--coupon {
-    color: var(--color5);
+    color: var(--background);
     position: absolute;
     bottom: 7rem;
     left: 0;

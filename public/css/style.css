@@ -5,7 +5,7 @@
 @import "partials/logo.css";
 @import "partials/button.css";
 @import "misc/grid_layout.css";
-@import "misc/hover_animation.css";
+@import "misc/clickable.css";
 @import "misc/shadow.css";
 @import "partials/paginator.css";
 @import "misc/not_selectable.css";
@@ -39,8 +39,9 @@ body {
 h1 {
     margin: 0;
     font-size: xxx-large;
-    font-family: montserrat_bold, serif;
-    color: var(--on_background);
+    font-family: RobotoSlab, serif;
+    font-weight: bold;
+    color: var(--foreground);
 }
 
 h2 {
@@ -102,12 +103,8 @@ input {
     font-size: medium;
 }
 
-.clickable{
-    pointer-events: auto;
-}
-
 select{
-    background-color: var(--color5);
+    background-color: var(--background);
     border: none;
     padding: 15px;
     border-radius: 999px;
@@ -116,7 +113,7 @@ select{
 }
 
 option{
-    background-color: var(--color5);
+    background-color: var(--background);
     border: none;
     padding: 15px;
     border-radius: 999px;
@@ -142,7 +139,7 @@ img{
 }
 
 .padding {
-    padding: 10px var(--page_padding) 0 var(--page_padding);
+    padding: 10px var(--page_padding) 10px var(--page_padding);
 }
 
 
@@ -172,7 +169,7 @@ img{
 
 .round_rectangle{
     border-radius: 999px;
-    background: var(--color5);
+    background: var(--background);
 }
 
 a{

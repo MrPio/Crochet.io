@@ -10,10 +10,6 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: transform 0.3s ease-out ;
-}
-#logo:hover {
-    transform: scale(1.1);
 }
 
 #logo p {
