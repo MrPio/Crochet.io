@@ -1,5 +1,6 @@
 .clickable{
     transition: transform 0.225s ease-out ;
+    cursor: pointer;
 }
 
 .clickable:hover {

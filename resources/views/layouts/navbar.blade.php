@@ -13,7 +13,7 @@
                title="Vai al mio catalogo" class="clickable">
                 Catalogo
             </a>
-            @if(str_contains($url, route('catalogue')))
+            @if(str_contains($url, '/catalogo'))
                 <span></span>
             @endif
         </li>
@@ -22,7 +22,7 @@
                title="Vai alla mia bio" class="clickable">
                 Chi sono
             </a>
-            @if(str_contains($url, route('about')))
+            @if(str_contains($url, '/bio'))
                 <span></span>
             @endif
         </li>
@@ -31,7 +31,7 @@
                title="Vai ai miei contatti" class="clickable">
                 Contatti
             </a>
-            @if(str_contains($url, route('contact')))
+            @if(str_contains($url, '/contatto'))
                 <span></span>
             @endif
         </li>

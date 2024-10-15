@@ -9,8 +9,8 @@
 @import "misc/shadow.css";
 @import "partials/paginator.css";
 @import "misc/not_selectable.css";
-@import "misc/scale_animation.css";
 @import "layouts/sidebar.css";
+@import "partials/line.css";
 
 #row, .row{
     width: 100%;
@@ -33,12 +33,12 @@ html {
 body {
     margin: 0;
     font-family: montserrat_light, serif;
-    background-color: var(--on_background);
+    background-color: var(--background);
 }
 
 h1 {
     margin: 0;
-    font-size: xxx-large;
+    font-size: 4rem;
     font-family: RobotoSlab, serif;
     font-weight: bold;
     color: var(--foreground);
@@ -47,13 +47,13 @@ h1 {
 h2 {
     margin: 0;
     font-size: x-large;
-    font-family: montserrat_bold, serif;
+    font-family: RobotoSlab, serif;
     color: var(--on_background);
 }
 
 h3 {
     margin: 0;
-    font-family: montserrat_bold, serif;
+    font-family: RobotoSlab, serif;
     color: var(--on_background);
 }
 p, b, strong{
@@ -130,6 +130,8 @@ img{
     display: flex;
     flex-direction: column;
     background-color: var(--background);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 #wrapper {
