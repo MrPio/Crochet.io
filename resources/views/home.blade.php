@@ -5,10 +5,10 @@
     <div class="row">
         <div style="width: 40%">
             <h1>Il Made-in-Italy<br>Fatto a Mano,<br>con Amore.</h1>
-            <h4>Progetti creativi esclusivi,<br>
-                disponibilità per lavori su commissione,<br>
-                attenzione ai dettagli e qualità,<br>
-                rigorosamente Made in Italy.</h4>
+            <h4>Progetti creativi studiati con cura e attenzione.<br>
+                Disponibilità per lavori su commissione.<br>
+                Dedizione ai dettagli e alla scelta dei materiale.<br>
+                Rigorosamente Made in Italy.</h4>
             @include('partials/button',['text'=>'Vai al Catalogo'])
         </div>
         <div style="width: 57%; display: flex; margin-left: auto;">

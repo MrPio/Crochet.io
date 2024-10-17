@@ -15,7 +15,7 @@
 
 {{--Top Banner--}}
 <div id="banner" class="padding">
-    <p>BISOGNO DI ASSISTENZA? SCRIVIMI SU <a href="//wa.me/393393932405"><strong>WHATSAPP AL 339 3932405</strong></a>
+    <p>HAI QUALCHE DOMANDA? CONTATTAMI SU <a href="//wa.me/393393932405"><strong>WHATSAPP AL 339 3932405</strong></a>
     </p>
 </div>
 
