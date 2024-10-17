@@ -11,6 +11,7 @@
 @import "misc/not_selectable.css";
 @import "layouts/sidebar.css";
 @import "partials/line.css";
+@import "misc/banner.css";
 
 #row, .row{
     width: 100%;

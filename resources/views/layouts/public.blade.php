@@ -5,7 +5,7 @@
 
 @section('body')
 
-    {{-- Top yellow block --}}
+    {{-- Logo + Navbar --}}
     <div class="padding" style="margin-bottom: 40px">
         <div id="row">
 
@@ -21,6 +21,8 @@
             @include('layouts.navbar')
         </div>
     </div>
+
+    {{--Header--}}
     <div class="padding">
         @yield('header')
     </div>
@@ -28,5 +30,5 @@
     @yield('content')
 
     {{-- Footer --}}
-    {{--    @include('layouts.footer')--}}
+    {{--@include('layouts.footer')--}}
 @endsection

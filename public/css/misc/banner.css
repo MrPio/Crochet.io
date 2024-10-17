@@ -1,0 +1,8 @@
+#banner{
+    background-color: var(--on_background);
+    display: flex;
+    justify-content: center;
+}
+#banner p,#banner strong{
+    color: var(--background);
+}
