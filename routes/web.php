@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +18,9 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/catalogo', function () {
-    return view('home');
-})->name('catalogue');
+Route::resource('article', ArticleController::class)->only([
+    'index', 'show'
+]);
 
 Route::get('/bio', function () {
     return view('home');

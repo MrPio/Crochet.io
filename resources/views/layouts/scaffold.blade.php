@@ -14,7 +14,7 @@
 <body>
 
 {{--Top Banner--}}
-<div id="banner" class="padding">
+<div id="banner" class="padding" >
     <p>HAI QUALCHE DOMANDA? CONTATTAMI SU <a href="//wa.me/393393932405"><strong>WHATSAPP AL 339 3932405</strong></a>
     </p>
 </div>

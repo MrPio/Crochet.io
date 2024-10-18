@@ -27,7 +27,9 @@
         @yield('header')
     </div>
 
-    @yield('content')
+    <div style="margin-bottom: 100px">
+        @yield('content')
+    </div>
 
     {{-- Footer --}}
     {{--@include('layouts.footer')--}}

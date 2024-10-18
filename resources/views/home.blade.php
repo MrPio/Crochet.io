@@ -1,9 +1,10 @@
+@php use App\Models\Article; @endphp
 @extends('layouts.public')
 @section('title', 'Home')
 
 @section('header')
     <div class="row">
-        <div style="width: 40%">
+        <div style="width: 48%">
             <h1>Il Made-in-Italy<br>Fatto a Mano,<br>con Amore.</h1>
             <h4>Progetti creativi studiati con cura e attenzione.<br>
                 Disponibilità per lavori su commissione.<br>
@@ -11,7 +12,7 @@
                 Rigorosamente Made in Italy.</h4>
             @include('partials/button',['text'=>'Vai al Catalogo'])
         </div>
-        <div style="width: 57%; display: flex; margin-left: auto;">
+        <div style="width: 48%; display: flex; margin-left: auto;">
             <img src="{{asset('images/owl_1.jpg')}}" alt=""
                  style="max-width:100%;max-height:34rem; margin-left: auto; border-radius: 12% 2% 12% 2%"/>
         </div>
@@ -29,16 +30,12 @@
     </div>
 
     {{--Nuovi articoli grid--}}
-    <div class="grid_responsive" style="padding-top: 100px; row-gap: 100px;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))">
-    {{--    @foreach ($categories as $category)--}}
-    {{--        @include('partials.categoria',--}}
-    {{--            [--}}
-    {{--                'id'=>$category->id,--}}
-    {{--                'title' => $category->title,--}}
-    {{--                'subtitle' => $category->subtitle,--}}
-    {{--                'image' => $category->image,--}}
-    {{--                'color' => $category->color,--}}
-    {{--            ])--}}
-    {{--    @endforeach--}}
+    @php
+        $articles=Article::all()
+    @endphp
+    <div class="grid_responsive padding"
+         style="    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); row-gap: 40px;">
+    @foreach ($articles as $article)
+        @include('partials.card',['$article'=>$article])
+    @endforeach
 @endsection

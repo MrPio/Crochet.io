@@ -1,41 +1,37 @@
-.card--azienda {
-    height:200px;
-    width: 280px;
-    border-radius: 36px;
-    /*border: var(--background) solid 7px;*/
-    padding: 0 20px;
-    /* Add shadows to create the "card" effect */
+.card {
+    height: 480px;
+    width: 380px;
     display: flex;
-    justify-content: center;
-
-
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    background-clip: border-box;
+    overflow: clip;
 }
 
-.card--image{
-    margin: 0;
+.card--overlay {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card--image img{
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
+    height: 100%;
+    transition: background-color 0.3s ease-out;
 }
 
-.card--edit, .card--destroy{
-    position: absolute;
-    top: -10px;
-    border-radius: 999px;
-    background-color: var(--on_background);
-    padding: 10px;
-    right: -12px;;
+.card--overlay:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.card--edit{
-    background-color: var(--background);
+.card--content {
+    position: relative;
+    bottom: -100%;           /* Start completely off the bottom */
+    height: 35%;             /* Cover half of the card */
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    transition: bottom 0.3s ease; /* Animation for sliding up */
+}
 
-    right: 50px;;
+ .card:hover .card--content {
+    bottom: -65%;               /* Slide up to cover half the card on hover */
 }
