@@ -10,11 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <title>Crochet.io | @yield('title', 'Home')</title>
+    @vite('resources/js/app.js')
 </head>
 <body>
 
 {{--Top Banner--}}
-<div id="banner" class="padding" >
+<div id="banner" class="padding">
     <p>HAI QUALCHE DOMANDA? CONTATTAMI SU <a href="//wa.me/393393932405"><strong>WHATSAPP AL 339 3932405</strong></a>
     </p>
 </div>

@@ -10,7 +10,7 @@
                 Disponibilità per lavori su commissione.<br>
                 Dedizione ai dettagli e alla scelta dei materiale.<br>
                 Rigorosamente Made in Italy.</h4>
-            @include('partials/button',['text'=>'Vai al Catalogo'])
+            @include('partials/button',['text'=>'Vai al Catalogo', 'route'=>route('articles.index')])
         </div>
         <div style="width: 48%; display: flex; margin-left: auto;">
             <img src="{{asset('images/owl_1.jpg')}}" alt=""

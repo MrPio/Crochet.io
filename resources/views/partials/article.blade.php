@@ -1,7 +1,6 @@
 @props([
     'article'=>null,
 ])
-
 @php
     $photos=explode(':',$article->photo);
     $photo=asset('storage/'.$photos[0]);
