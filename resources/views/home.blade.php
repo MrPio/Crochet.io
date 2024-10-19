@@ -24,7 +24,8 @@
     <div class="padding" style="margin-top: 8rem">
         <div class="row" style="align-items: end">
             <h2>Nuovi articoli</h2>
-            <h3 class="clickable" style="margin-left: auto">Vedi tutta la merce</h3>
+            <h3 class="clickable" style="margin-left: auto" onclick="window.location='{{route('articles.index')}}'">Vedi
+                tutta la merce</h3>
         </div>
         <span class="line"></span>
     </div>

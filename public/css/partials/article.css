@@ -1,0 +1,24 @@
+.article {
+    height: 290px;
+    width: 290px;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    background-clip: border-box;
+    overflow: clip;
+}
+.article--content{
+    width: 290px;
+    padding: 10px 20px;
+}
+
+.price{
+    font-size: x-large;
+    font-weight: bold;
+    margin: 14px 0px;
+
+}

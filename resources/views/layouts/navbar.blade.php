@@ -9,11 +9,11 @@
             @endif
         </li>
 
-        <li><a href="{{ route('home') }}"
+        <li><a href="{{ route('articles.index') }}"
                title="Vai al mio catalogo" class="clickable">
                 Catalogo
             </a>
-            @if(str_contains($url, '/catalogo'))
+            @if(str_contains($url, '/articles'))
                 <span></span>
             @endif
         </li>

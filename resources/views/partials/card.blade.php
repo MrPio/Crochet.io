@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="{{asset('css/partials/card.css')}}">
 
 <div class="card clickable shadow"
-     @if(isset($route)) onclick="window.location='{{route('article.show')}}/{{$article->id}}'" @endif
+     @if(isset($route)) onclick="window.location='{{route('articles.show')}}/{{$article->id}}'" @endif
      style="background-image: url({{$photo}});">
     <div class="card--overlay">
         <div class="card--content">

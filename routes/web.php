@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::resource('article', ArticleController::class)->only([
+Route::resource('articles', ArticleController::class)->only([
     'index', 'show'
 ]);
 
