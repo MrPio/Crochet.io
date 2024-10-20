@@ -12,6 +12,7 @@
 @import "layouts/sidebar.css";
 @import "partials/line.css";
 @import "misc/banner.css";
+@import "partials/article.css";
 
 #row, .row {
     width: 100%;
@@ -100,11 +101,17 @@ textarea {
 }
 
 input {
-    border: none;
+    border: solid 2px var(--on_background);
+    width: calc(100% - 2 * 15px);
     padding: 15px;
     border-radius: 999px;
     font-family: montserrat_regular, serif;
     font-size: medium;
+}
+input:focus{
+    outline: none !important;
+    border: solid 3px var(--foreground);
+    padding: 14px;
 }
 
 select {
@@ -128,6 +135,7 @@ option {
 img {
     user-select: none;
     pointer-events: none;
+    object-fit: cover;
 }
 
 #page {

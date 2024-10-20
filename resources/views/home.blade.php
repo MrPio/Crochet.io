@@ -4,7 +4,7 @@
 
 @section('header')
     <div class="row">
-        <div style="width: 48%">
+        <div style="width: 48%; min-width: 38rem">
             <h1>Il Made-in-Italy<br>Fatto a Mano,<br>con Amore.</h1>
             <h4>Progetti creativi studiati con cura e attenzione.<br>
                 Disponibilità per lavori su commissione.<br>

@@ -1,4 +1,4 @@
-<div id="navbar">
+<div id="navbar" style="min-width: 20rem">
     <ul>
         <li><a href="{{ route('home') }}"
                title="Vai alla home" class="clickable">

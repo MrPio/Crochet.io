@@ -8,11 +8,11 @@ class ArticleController extends Controller
 {
     public function index()
     {
-        $articles = Article::where('removed_at', null);
+        $articles = Article::all();
         $view = view('resources.article.index');
 
         return $view
-            ->with('articles', $articles->paginate(20));
+            ->with('articles', $articles);
     }
 
     public function show($id)

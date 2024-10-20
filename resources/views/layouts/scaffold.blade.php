@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <title>Crochet.io | @yield('title', 'Home')</title>
-    @vite('resources/js/app.js')
+    @vite(['public/css/style.css','resources/js/app.js'])
 </head>
 <body>
 

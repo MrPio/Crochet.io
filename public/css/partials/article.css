@@ -1,6 +1,6 @@
 .article {
-    height: 290px;
-    width: 290px;
+    height: 300px;
+    width: 100%;
     display: flex;
     /*justify-content: center;*/
     /*align-items: center;*/
@@ -11,14 +11,37 @@
     background-clip: border-box;
     overflow: clip;
 }
-.article--content{
-    width: 290px;
+
+.article--content {
     padding: 10px 20px;
 }
 
-.price{
+.price {
     font-size: x-large;
     font-weight: bold;
     margin: 14px 0px;
 
+}
+
+.sidebar {
+    width: 25%;
+    float: left;
+    margin-right: 34px;
+}
+
+.filter--item ol {
+    list-style: none;
+    padding: 0;
+    background-color: white;
+}
+
+.filter--item li {
+    border: solid 2px var(--on_background);
+    padding: 15px;
+}
+
+.filter--item a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bolder;
 }
