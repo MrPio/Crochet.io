@@ -1,6 +1,7 @@
 .clickable{
     transition: transform 0.225s ease-out ;
     cursor: pointer;
+    pointer-events: auto;
 }
 
 .clickable:hover {
@@ -9,4 +10,8 @@
 
 .clickable:active  {
     transform: scale(1);
+}
+
+.non_clickable {
+    pointer-events: none;
 }

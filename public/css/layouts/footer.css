@@ -33,7 +33,6 @@ ul{
 }
 .footer{
     line-height: 1.5;
-    font-family: 'Monserrat', sans-serif;
     align-content: center;
     background-color: var(--on_background);
     padding: 70px 0;

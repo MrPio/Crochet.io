@@ -1,7 +1,9 @@
 :root {
     --foreground: #6dc6c1;
     --on_background: #022e40;
+    --on_background_dim: #022e4050;
     --background: #f9f8f1;
+    --white: #ffffff;
     --error: #ff4500;
 
     --width: 800;

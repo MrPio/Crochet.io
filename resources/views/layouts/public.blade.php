@@ -12,7 +12,7 @@
             {{-- Logo --}}
             <div id="logo" class="clickable" onclick="window.location='{{@route('home')}}'" style="min-width: 11rem">
                 <img src="{{asset('images/logo-2.png')}}" alt="website logo" style="width: 4rem">
-                <p>Fili di<br>passione</p>
+                <p>Intrecci di<br>passione</p>
             </div>
 
             <div style="width: max-content"></div>

@@ -24,24 +24,69 @@
 }
 
 .sidebar {
-    width: 25%;
+    width: 30%;
     float: left;
     margin-right: 34px;
+}
+
+.filter--item {
+    border: solid 3px var(--foreground);
+    background-color: var(--white);
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .filter--item ol {
     list-style: none;
     padding: 0;
-    background-color: white;
 }
 
 .filter--item li {
-    border: solid 2px var(--on_background);
-    padding: 15px;
+    padding: 12px;
+    align-content: center;
+    justify-content: center;
+}
+.filter--item h3{
+    padding: 4px 0;
+    position: relative;
+    cursor: pointer;
+}
+.filter--item h3::after {
+    position: absolute;
+    right: 10px;
+    content: "keyboard_arrow_down";
+    font-family: 'Material Icons', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 26px;
+    top: 0;
+    bottom: 0;
+}
+.hidden h3::after {
+    content: 'keyboard_arrow_up';
 }
 
 .filter--item a {
+    align-items: center;
+    display: flex;
     text-decoration: none;
     color: inherit;
-    font-weight: bolder;
+    font-weight: lighter;
+}
+
+.filter--item a::before {
+    content: "";
+    display: inline-block;
+    border: 1px solid var(--on_background);
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.filter--selected::before {
+    background-color: var(--on_background);
+}
+
+.filter--default {
+    font-weight: bolder !important;
 }

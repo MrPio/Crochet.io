@@ -38,3 +38,11 @@
     font-family: RobotoSlab;
     src: url(../../font/RobotoSlab-VariableFont_wght.ttf);
 }
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v45/1Ptsg8LJRfWJmhDAuUs4TYFq.woff2) format('woff2');
+}

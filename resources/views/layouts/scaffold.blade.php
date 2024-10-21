@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <link rel="icon" href="{{ asset('images/logo.png') }}" type="image/x-icon">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <head>
     @section('script')
         <script src="{{asset('js/jquery.min.js')}}"></script>
@@ -8,7 +9,6 @@
     @show
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <title>Crochet.io | @yield('title', 'Home')</title>
     @vite(['public/css/style.css','resources/js/app.js'])
 </head>

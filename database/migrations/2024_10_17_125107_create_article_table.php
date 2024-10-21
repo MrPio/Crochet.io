@@ -24,10 +24,12 @@ return new class extends Migration {
             $table->text('composition')->nullable();
             $table->string('origin', 32)->default('Italia');
             $table->enum('availability', ['Disponibile ora', 'Su ordinazione'])->default('Su ordinazione');
-            $table->timestamps();
 
             $table->foreignId('category_id')->nullable()->constrained()->nullOnDelete();
-            $table->foreignId('tool_id')->nullable()->constrained()->nullOnDelete();;
+            $table->foreignId('tool_id')->nullable()->constrained()->nullOnDelete();
+
+            $table->timestamps();
+            $table->timestamp('removed_at')->nullable()->default(null);
         });
     }
 
