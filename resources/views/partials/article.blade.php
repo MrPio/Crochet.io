@@ -7,8 +7,6 @@
     $formattedPrice = number_format($article->price, 2, ',', '.'); // Format the number with 2 decimal places and commas
 @endphp
 
-<link rel="stylesheet" href="{{asset('css/partials/article.css')}}">
-
 <div class="clickable">
     <div class="article"
          @if(isset($route)) onclick="window.location='{{route('articles.show')}}/{{$article->id}}'" @endif

@@ -23,4 +23,9 @@ class Catalog
     {
         return $tool == null ? $query : $query->whereHas('tool', fn($query) => $query->where('name', $tool));
     }
+
+    public function byPrice($query, $minPrice, $maxPrice)
+    {
+        return ($minPrice == null || $maxPrice == null) ? $query : $query->whereBetween('price', [$minPrice, $maxPrice]);
+    }
 }

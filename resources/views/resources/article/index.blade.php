@@ -4,18 +4,13 @@
      'available'=>null,
      'category'=>null,
      'tool'=>null,
+     'min_price'=>null,
+     'max_price'=>null,
  ])
 @extends('layouts.public')
 @section('title', 'Catalogo')
 
 @php
-    $args = [
-        'search_string' => $search_string ?? null,
-        'available' => $available ?? null,
-        'category' => $category ?? null,
-        'tool' => $tool ?? null,
-        ];
-
     $categories=Category::all()->map(fn($it)=>$it->name);
     $tools=Tool::all()->map(fn($it)=>$it->name);
 @endphp
@@ -25,7 +20,7 @@
 
         {{--Filtering--}}
         <div class="sidebar">
-            <div class="filter--item">
+            <div class="filter--item checkbox_filter">
                 <h3> Disponibilità </h3>
                 <ol>
                     <li><a class="clickable @if($available==null)filter--selected @endif filter--default"
@@ -38,7 +33,7 @@
                     @endforeach
                 </ol>
             </div>
-            <div class="filter--item">
+            <div class="filter--item checkbox_filter">
                 <h3> Categoria </h3>
                 <ol>
                     <li><a class="clickable @if($category==null)filter--selected @endif filter--default"
@@ -50,7 +45,7 @@
                     @endforeach
                 </ol>
             </div>
-            <div class="filter--item">
+            <div class="filter--item checkbox_filter">
                 <h3> Tecnica </h3>
                 <ol>
                     <li><a class="clickable @if($tool==null)filter--selected @endif filter--default"
@@ -61,6 +56,16 @@
                                href="{{request()->fullUrlWithQuery(['tool'=>$t])}}"> {{$t}} </a></li>
                     @endforeach
                 </ol>
+            </div>
+            <div class="filter--item">
+                <h3> Prezzo </h3>
+                <div class="slider-container">
+                    <div id="price-slider"></div>
+                    <div class="price-values">
+                        <p id="min-price"></p>
+                        <p id="max-price"></p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -85,7 +90,7 @@
                 <h1 style="width: 100%; opacity: 0.35; text-align: center">Nessun articolo.</h1>
             @else
                 <div class="grid_responsive"
-                     style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); row-gap: 40px; ">
+                     style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); row-gap: 36px; ">
                     @foreach ($articles as $article)
                         @include('partials.article',['$article'=>$article])
                         @include('partials.article',['$article'=>$article])
@@ -108,7 +113,9 @@
             function reset() {
                 window.location = "{{route('articles.index')}}";
             }
+        </script>
 
+        <script type="module">
             $(() => {
                 // Set the search filter caret
                 const input = document.getElementById('search');
@@ -116,10 +123,33 @@
                 input.selectionStart = 0;
                 input.selectionEnd = length;
                 input.focus();
+
+                // Initialize the slider
+                const price_slider = document.getElementById('price-slider')
+                noUiSlider.create(price_slider, {
+                    start: [{{$min_price??0}}, {{$max_price??200}}],
+                    connect: true,
+                    step: 10,
+                    range: {
+                        'min': 0,
+                        'max': 200
+                    }
+                });
+                price_slider.noUiSlider.on('update', (values) => {
+                    $("#min-price").text("€ " + Number(values[0]).toFixed(0));
+                    $("#max-price").text("€ " + Number(values[1]).toFixed(0));
+                });
+                price_slider.noUiSlider.on('set', (values) => {
+                    console.log(values)
+                    let url = '{!! request()->fullUrlWithQuery(['min_price'=>'_min_price','max_price'=>'_max_price']) !!}';
+                    url = url.replace('_min_price', values[0]);
+                    url = url.replace('_max_price', values[1]);
+                    window.location = url;
+                });
             });
 
             // Set the filters hide/show behaviours
-            $('.filter--item h3').each((i, element) => {
+            $('.checkbox_filter h3').each((i, element) => {
                 if ($(element.parentElement).find('.filter--default').hasClass('filter--selected'))
                     $(element).parent().find('ol').hide()
                 $(element).on('click', () => {
@@ -133,5 +163,4 @@
             })
 
         </script>
-
 @endsection

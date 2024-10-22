@@ -43,6 +43,11 @@ class ArticleController extends Controller
             $view->with('tool', $tool);
         }
 
+        if (key_exists('min_price', $_GET) || key_exists('max_price', $_GET)) {
+            $articles = $this->catalog->byPrice($articles, $_GET['min_price'],$_GET['max_price']);
+            $view->with('min_price', $_GET['min_price'])->with('max_price', $_GET['max_price']);
+        }
+
         // Sort by creation date
         if (count($articles->get()) > 0)
             $articles = $articles->orderBy('created_at', 'desc');

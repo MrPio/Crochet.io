@@ -26,14 +26,5 @@
                 <span></span>
             @endif
         </li>
-
-        <li><a href="{{ route('contact') }}"
-               title="Vai ai miei contatti" class="clickable">
-                Contatti
-            </a>
-            @if(str_contains($url, '/contatto'))
-                <span></span>
-            @endif
-        </li>
     </ul>
 </div>

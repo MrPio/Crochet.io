@@ -1,7 +1,7 @@
 @php
     $url = $_SERVER['REQUEST_URI'];
 @endphp
-@extends('layouts.scaffold')
+@extends('layouts.app')
 
 @section('body')
 
