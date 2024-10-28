@@ -27,10 +27,7 @@
         @yield('header')
     </div>
 
-    <div style="margin-bottom: 100px">
+    <div>
         @yield('content')
     </div>
-
-    {{-- Footer --}}
-    {{--@include('layouts.footer')--}}
 @endsection

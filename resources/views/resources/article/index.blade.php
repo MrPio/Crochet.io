@@ -93,8 +93,6 @@
                      style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); row-gap: 36px; ">
                     @foreach ($articles as $article)
                         @include('partials.article',['$article'=>$article])
-                        @include('partials.article',['$article'=>$article])
-                        @include('partials.article',['$article'=>$article])
                     @endforeach
                 </div>
             @endif

@@ -3,16 +3,14 @@
 @import "configurations/root.css";
 @import "layouts/navbar.css";
 @import "partials/logo.css";
-@import "partials/button.css";
 @import "misc/grid_layout.css";
 @import "misc/clickable.css";
 @import "misc/shadow.css";
 @import "partials/paginator.css";
 @import "misc/not_selectable.css";
 @import "layouts/sidebar.css";
-@import "partials/line.css";
 @import "misc/banner.css";
-@import "partials/article.css";
+@import "misc/line.css";
 @import url("https://cdn.jsdelivr.net/npm/nouislider@15.8.1/dist/nouislider.css") ;
 
 #row, .row {
@@ -146,7 +144,7 @@ img {
     object-fit: cover;
 }
 
-#page {
+.page {
     display: flex;
     flex-direction: column;
     background-color: var(--background);

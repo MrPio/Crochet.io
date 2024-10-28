@@ -8,7 +8,8 @@
     'form_type'=>null,
     'onClick'=>null,
  ])
-<link rel="stylesheet" href="{{asset('css/partials/button.css')}}">
+@vite('resources/css/partials/button.css')
+
 <button @isset($id) id="{{$id}}" @endisset
         style="@if($big)width:180px; height:52px; font-size: 17px; @endif
         @isset($style){{$style}}@endisset"

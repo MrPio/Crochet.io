@@ -7,7 +7,7 @@
     $photo=asset('storage/'.$photos[0]);
 @endphp
 
-<link rel="stylesheet" href="{{asset('css/partials/card.css')}}">
+@vite('resources/css/partials/card.css')
 
 <div class="card clickable shadow"
      @if(isset($route)) onclick="window.location='{{route('articles.show')}}/{{$article->id}}'" @endif

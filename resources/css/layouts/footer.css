@@ -1,6 +1,6 @@
 #pre_footer {
     height: 100px;
-    width: 100%;
+    width: 1440px;
     margin-top: 20px;
     position: relative;
     background-color: var(--background);
@@ -21,8 +21,8 @@
 
 
 .footer-container{
-    max-width: 1170px;
-    margin:auto;
+    max-width: 1440px;
+    margin: auto;
 }
 .footer-container.row{
     display: flex;
@@ -32,6 +32,7 @@ ul{
     list-style: none;
 }
 .footer{
+    margin-top: 6rem;
     line-height: 1.5;
     align-content: center;
     background-color: var(--on_background);
@@ -40,14 +41,11 @@ ul{
 .footer-col{
     margin:0;
     box-sizing: border-box;
-    align-content: center;
-    width: 25%;
-    padding: 0 15px;
 }
 
 .footer-col h4{
-    padding-left: 40px;
-    font-size: 22px;
+    padding: 0;
+    font-size: x-large;
     color: var(--background);
     text-transform: capitalize;
     margin-bottom: 35px;
@@ -84,35 +82,34 @@ ul{
     margin-bottom: 10px;
 }
 .footer-col ul li a{
+    padding: 0;
     font-size: 16px;
     text-transform: capitalize;
     text-decoration: none;
     font-weight: 300;
-    color: #bbbbbb;
     display: block;
     transition: all 0.2s ease;
 }
 .footer-col ul li a:hover{
-    color: #ffd301;
+    color: var(--accent);
     padding-left: 8px;
 }
 .footer-col .social-links a i{
     display: inline-block;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     background-color: rgba(255,255,255,0.2);
     margin:0 10px 10px 0;
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     border-radius: 50%;
-    color: #ffffff;
     transition: all 0.3s ease;
 }
 
 
 .footer-col .social-links a:hover i:hover{
-    color: #24262b;
-    background-color: #ffffff;
+    color: var(--on_background);
+    background-color: var(--white);
 }
 
 /*responsive*/
