@@ -21,4 +21,14 @@ class Article extends Model
     {
         return $this->belongsTo(Tool::class);
     }
+
+    public function photos(): array
+    {
+        return explode(':', $this->photo);
+    }
+
+    public function formattedPrice(): string
+    {
+        return number_format($this->price, 2, ',', '.');
+    }
 }

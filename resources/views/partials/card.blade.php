@@ -10,7 +10,7 @@
 @vite('resources/css/partials/card.css')
 
 <div class="card clickable shadow"
-     @if(isset($route)) onclick="window.location='{{route('articles.show')}}/{{$article->id}}'" @endif
+     onclick="window.location='{{route('articles.show',$article->id)}}'"
      style="background-image: url({{$photo}});">
     <div class="card--overlay">
         <div class="card--content">
