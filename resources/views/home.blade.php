@@ -1,8 +1,10 @@
 @php use App\Models\Article; @endphp
-@extends('layouts.public')
+@extends('layouts.app')
 @section('title', 'Home')
 
-@section('header')
+
+
+@section('content')
     <div class="row">
         <div style="width: 48%; min-width: 38rem">
             <h1>Il Made-in-Italy<br>Fatto a Mano,<br>con Amore.</h1>
@@ -13,15 +15,12 @@
             @include('partials/button',['text'=>'Vai al Catalogo', 'route'=>route('articles.index')])
         </div>
         <div style="width: 48%; display: flex; margin-left: auto;">
-            <img src="{{asset('images/owl_1.jpg')}}" alt=""
+            <img src="{{asset('storage/owl_2.jpg')}}" alt=""
                  style="max-width:100%;max-height:34rem; margin-left: auto; border-radius: 12% 2% 12% 2%"/>
         </div>
     </div>
-@endsection
 
-
-@section('content')
-    <div class="padding" style="margin-top: 8rem">
+    <div style="margin-top: 8rem">
         <div class="row" style="align-items: end">
             <h2>Nuovi articoli</h2>
             <h3 class="clickable" style="margin-left: auto" onclick="window.location='{{route('articles.index')}}'">Vedi
@@ -34,8 +33,8 @@
     @php
         $articles=Article::all()
     @endphp
-    <div class="grid_responsive padding"
-         style="    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); row-gap: 40px;">
+    <div class="grid_responsive"
+         style="margin-top: 1rem;    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); row-gap: 40px;">
     @foreach ($articles as $article)
         @include('partials.card',['$article'=>$article])
     @endforeach

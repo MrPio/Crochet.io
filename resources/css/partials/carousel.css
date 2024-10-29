@@ -1,0 +1,73 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -36px;
+    padding: 20px 18px;
+    color: var(--on_background);
+    background-color: var(--white);
+    font-weight: bolder;
+    font-size: 26px;
+    transition: 0.5s ease;
+    border-radius: 0 8px 8px 0;
+    user-select: none;
+}
+
+.invisible{
+    color: transparent;
+    background-color: transparent;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 8px 0 0 8px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: var(--on_background);
+    color: var(--white);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    margin: 0 6px;
+    background-color: var(--background);
+    border-radius: 10%;
+    display: inline-block;
+    transition: background-color,scale 0.5s ease;
+}
+
+.active {
+    scale: 1.185;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .25}
+    to {opacity: 1}
+}

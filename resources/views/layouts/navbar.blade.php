@@ -1,3 +1,7 @@
+@php
+    $url = $_SERVER['REQUEST_URI'];
+@endphp
+
 <div id="navbar" style="min-width: 20rem">
     <ul>
         <li><a href="{{ route('home') }}"

@@ -2,16 +2,11 @@
     'article'=>null,
 ])
 
-@php
-    $photos=explode(':',$article->photo);
-    $photo=asset('storage/'.$photos[0]);
-@endphp
-
 @vite('resources/css/partials/card.css')
 
 <div class="card clickable shadow"
      onclick="window.location='{{route('articles.show',$article->id)}}'"
-     style="background-image: url({{$photo}});">
+     style="background-image: url({{asset('storage/'.$article->thumbnail)}});">
     <div class="card--overlay">
         <div class="card--content">
             <h2 style="overflow: clip !important; text-overflow: ellipsis; white-space: nowrap;">{{$article->title}}</h2>

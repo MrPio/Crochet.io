@@ -7,7 +7,7 @@
      'min_price'=>null,
      'max_price'=>null,
  ])
-@extends('layouts.public')
+@extends('layouts.app')
 @section('title', 'Catalogo')
 
 @php
@@ -16,7 +16,7 @@
 @endphp
 
 @section('content')
-    <div class="row padding" style="width: auto">
+    <div class="row" style="width: auto">
 
         {{--Filtering--}}
         <div class="sidebar">

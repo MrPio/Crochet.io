@@ -6,7 +6,7 @@
 {{--<div id="pre_footer"></div>--}}
 <footer class="footer">
     <div class="footer-container">
-        <div class="row padding" style="justify-content: space-between; width: auto">
+        <div class="row" style="justify-content: space-between; width: auto">
             <div class="footer-col">
                 <h4 class="company">Intrecci di passione</h4>
                 <ul style="padding: 0">

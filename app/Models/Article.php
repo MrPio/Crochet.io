@@ -24,11 +24,16 @@ class Article extends Model
 
     public function photos(): array
     {
-        return explode(':', $this->photo);
+        return explode(':', $this->_photos);
     }
 
     public function formattedPrice(): string
     {
         return number_format($this->price, 2, ',', '.');
+    }
+
+    public function colours(): array
+    {
+        return explode(':', $this->_colours);
     }
 }

@@ -18,12 +18,42 @@
 </div>
 
 <div style="background-color: var(--background)">
-    <div class="page">
-        @yield('body')
+    {{-- Logo + Navbar --}}
+    <div class="page padding">
+        <div id="row">
+
+            {{-- Logo --}}
+            <div id="logo" class="clickable" onclick="window.location='{{@route('home')}}'" style="min-width: 11rem">
+                <img src="{{asset('images/logo-2.png')}}" alt="website logo" style="width: 4rem">
+                <p>Intrecci di<br>passione</p>
+            </div>
+
+            <div style="width: max-content"></div>
+
+            {{-- Navbar --}}
+            @include('layouts.navbar')
+        </div>
+    </div>
+
+    {{--Header--}}
+    <div>
+        @yield('header')
+    </div>
+
+    <div class="page padding" style="margin-top: 40px">
+        @yield('content')
+    </div>
+
+    <div>
+        @yield('header2')
+    </div>
+    <div class="page padding" style="margin-top: 40px">
+        @yield('content2')
     </div>
 </div>
 
 {{-- Footer --}}
 @include('layouts.footer')
+
 </body>
 </html>

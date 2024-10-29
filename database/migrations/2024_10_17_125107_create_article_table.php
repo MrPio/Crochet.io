@@ -12,14 +12,15 @@ return new class extends Migration {
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
-            $table->text('photo');
+            $table->text('_photos');
+            $table->text('thumbnail');
             $table->text('description');
             $table->string('name', 32);
             $table->string('title', 256);
             $table->decimal('price', 8, 2, true);
             $table->unsignedSmallInteger('amount')->default(0);
             $table->integer('discount')->nullable();
-            $table->string('colour', 64)->nullable();
+            $table->text('_colours')->nullable();
             $table->string('size', 128)->nullable();
             $table->text('composition')->nullable();
             $table->string('origin', 32)->default('Italia');
