@@ -15,6 +15,7 @@
     $tools=Tool::all()->map(fn($it)=>$it->name);
 @endphp
 
+@vite(['resources/css/partials/nouislider.css','resources/css/partials/articles.index.css'])
 @section('content')
     <div class="row" style="width: auto">
 
