@@ -7,7 +7,7 @@
     {{--Images carousel--}}
     <div style="background-color: var(--white)">
         <div class="page padding" style="background: none; padding: 3rem 0">
-            @include('partials/carousel',['images'=>$article->photos(),'height'=>'40rem'])
+            @include('partials/carousel',['images'=>$article->photos(),'height'=>'44rem'])
         </div>
     </div>
 @endsection
@@ -15,7 +15,7 @@
 
 @section('content')
     {{--Title + Description + Price--}}
-    <div style="width: 100%; margin-top: 5rem">
+    <div style="width: 100%; margin-top: 3rem">
         <h2 style="font-size: xx-large">{{$article->title}}</h2>
         <h4 style="line-height: 1.5; font-size: larger">{{$article->description}}</h4>
         {{--                @include('partials/button',['text'=>'Vai al Catalogo', 'route'=>route('articles.index')])--}}
