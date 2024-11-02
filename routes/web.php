@@ -23,9 +23,5 @@ Route::resource('articles', ArticleController::class)->only([
 ]);
 
 Route::get('/bio', function () {
-    return view('home');
+    return view('about');
 })->name('about');
-
-Route::get('/contatto', function () {
-    return view('home');
-})->name('contact');

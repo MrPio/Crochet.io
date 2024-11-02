@@ -31,7 +31,7 @@
 
     {{--Nuovi articoli grid--}}
     @php
-        $articles=Article::all()
+        $articles=Article::all()->sortDesc()
     @endphp
     <div class="grid_responsive"
          style="margin-top: 1rem;    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); row-gap: 40px;">

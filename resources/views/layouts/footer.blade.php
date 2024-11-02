@@ -17,7 +17,7 @@
             <div class="footer-col">
                 <h4 class="help">Informazioni</h4>
                 <ul style="padding: 0">
-                    <li><a href="{{ route('contact') }}">Contatti</a></li>
+                    <li><a href="{{ route('about') }}">Contatti</a></li>
                     <li><a href="{{ route('about') }}">Chi sono</a></li>
                 </ul>
             </div>

@@ -113,7 +113,22 @@ class DatabaseSeeder extends Seeder
             'availability' => 'Disponibile ora',
             'category_id' => 3,
             'tool_id' => 1,
-        ]];
+        ],
+            [
+                '_photos' => 'dog_2_1.png:dog_2_2.png:dog_2_3.png:dog_2_4.png',
+                'thumbnail' => 'dog_2_1.png',
+                'description' => "TODO",
+                'name' => 'Maglioncino per cani marrone',
+                'title' => 'Maglioncino per cani marrone',
+                'price' => 38.50,
+                'discount' => 0,
+                '_colours' => 'Marrone',
+                'size' => 'S',
+                'composition' => 'TODO',
+                'availability' => 'Disponibile ora',
+                'category_id' => 3,
+                'tool_id' => 1,
+            ]];
 
         $colours=[
             ['id'=>'Verde','hex'=>'#48bc4e'],
