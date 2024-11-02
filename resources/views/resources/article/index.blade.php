@@ -70,33 +70,37 @@
             </div>
         </div>
 
-        {{--Catalogue Grid--}}
-        <div style="width: 100%">
-            <div class="round_rectangle row"
-                 style="margin-bottom: 34px; display: grid; grid-template-columns: auto min-content min-content 10px; column-gap: 12px">
-                <input id="search" onkeyup="search(event.key)"
-                       placeholder="Nome articolo"
-                       value="{{$search_string}}">
-                <img class="clickable" style="margin: auto 0;cursor: pointer" width="18px"
-                     src="{{asset('images/delete.svg')}}"
-                     alt=""
-                     onclick="reset()">
-                <img class="clickable" style="margin: auto 0;cursor: pointer" width="26px"
-                     src="{{asset('images/search.svg')}}"
-                     alt=""
-                     onclick="search()">
-            </div>
-
-            @if($articles->isEmpty())
-                <h1 style="width: 100%; opacity: 0.35; text-align: center">Nessun articolo.</h1>
-            @else
-                <div class="grid_responsive"
-                     style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); row-gap: 36px; ">
-                    @foreach ($articles as $article)
-                        @include('partials.article',['$article'=>$article])
-                    @endforeach
+            {{--Catalogue Grid--}}
+            <div style="width: 100%">
+                <div class="round_rectangle row"
+                     style="margin-bottom: 34px; display: grid; grid-template-columns: auto min-content min-content 10px; column-gap: 12px">
+                    <input id="search" onkeyup="search(event.key)"
+                           placeholder="Nome articolo"
+                           value="{{$search_string}}">
+                    <img class="clickable" style="margin: auto 0;cursor: pointer" width="18px"
+                         src="{{asset('images/delete.svg')}}"
+                         alt=""
+                         onclick="reset()">
+                    <img class="clickable" style="margin: auto 0;cursor: pointer" width="26px"
+                         src="{{asset('images/search.svg')}}"
+                         alt=""
+                         onclick="search()">
                 </div>
-            @endif
+
+                @if($articles->isEmpty())
+                    <h1 style="width: 100%; opacity: 0.35; text-align: center">Nessun articolo.</h1>
+                @else
+                    <div class="grid_responsive"
+                         style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); row-gap: 36px; ">
+                        @foreach ($articles as $article)
+                            @include('partials.article',['$article'=>$article])
+                        @endforeach
+                    </div>
+
+                    {{--Bottom pagination--}}
+                    {!!   $articles->render('pagination.paginator') !!}
+                @endif
+
         </div>
 
         <script>
@@ -163,3 +167,4 @@
 
         </script>
 @endsection
+

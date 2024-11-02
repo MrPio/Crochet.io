@@ -1,37 +1,38 @@
 #pagination {
-    margin: 50px auto 0 auto;
+    margin-top: 5rem;
     text-align: center;
-    font-family: montserrat_regular, serif;
-    font-size: large;
+    justify-content: center;
+    font-size: x-large;
 }
 
 #pagination a {
-    font-family: montserrat_bold, serif;
+    font-weight: bolder;
 }
 
 .paginator--number, .paginator--number_active {
-    margin: 4px 2px;
+    margin: 4px 4px;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
+    line-height: 60px;
     text-decoration: none;
     transition: all 0.15s ease-out;
 
 }
 
 .paginator--number{
-    background-color: var(--background);
+    background-color: var(--white);
+    color: var(--foreground);
 }
 
 .paginator--number_active{
-    background-color: var(--color2);
-    color: var(--background);
+    background-color: var(--foreground);
+    color: var(--white);
 }
 
-.paginator--number:hover, .paginator--number_active:hover {
-    margin: 0 10px;
-    transition: all 0.15s ease-out;
-}
+/*.paginator--number:hover, .paginator--number_active:hover {*/
+/*    margin: 0 10px;*/
+/*    transition: all 0.15s ease-out;*/
+/*}*/

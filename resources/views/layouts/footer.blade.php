@@ -4,7 +4,7 @@
 @vite('resources/css/layouts/footer.css')
 
 {{--<div id="pre_footer"></div>--}}
-<footer class="footer">
+<footer class="padding footer">
     <div class="footer-container">
         <div class="row" style="justify-content: space-between; width: auto">
             <div class="footer-col">

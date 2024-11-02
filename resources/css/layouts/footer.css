@@ -36,7 +36,8 @@ ul{
     line-height: 1.5;
     align-content: center;
     background-color: var(--on_background);
-    padding: 70px 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 .footer-col{
     margin:0;
