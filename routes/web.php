@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,9 @@ Route::resource('articles', ArticleController::class)->only([
 Route::get('/bio', function () {
     return view('about');
 })->name('about');
+
+Route::get('/run-migrations', function () {
+    Artisan::call('optimize:clear');
+    Artisan::call('migrate:fresh --seed');
+    return 'Migration run successfully';
+})->name('run-migrations');
