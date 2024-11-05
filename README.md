@@ -9,7 +9,11 @@
 
 ## Intrecci di Passione
 
- Showcase of hand-made goods 
+ Showcase of hand-made goods.
+
+### Demo
+
+[![Demo](https://github.com/user-attachments/assets/396a7e76-80a7-495a-8c3d-af71c13c93ae)](https://www.youtube.com/watch?v=sUbDQhdnhbQ)
 
 ### Screenshots
 <p align="center">
@@ -19,10 +23,4 @@
     <img width="80%" src="https://github.com/user-attachments/assets/37e555cf-1481-458c-a29c-5fb6e1a95322"></img>
     <img width="75%" src="https://github.com/user-attachments/assets/ba0e70a3-7f5c-41ba-9f1b-53385c45262f"></img>
     <img width="80%" src="https://github.com/user-attachments/assets/3a6d0f11-e21a-412b-8c05-0acfb6085a60"></img>
-</p>
-
-### Demo
-
-<p align="center">
-    !(demo.mp4)[demo/demo.mp4]
 </p>
