@@ -27,8 +27,11 @@ Route::get('/bio', function () {
     return view('about');
 })->name('about');
 
+// DEBUG routes ===========================
 Route::get('/run-migrations', function () {
-    Artisan::call('optimize:clear');
-    Artisan::call('migrate:fresh --seed');
-    return 'Migration run successfully';
+//    Artisan::call('optimize:clear');
+//    Artisan::call('migrate:fresh --seed');
+//    return 'Migration run successfully';
+    Artisan::call('db:seed');
+    return 'Database seeding completed.';
 })->name('run-migrations');

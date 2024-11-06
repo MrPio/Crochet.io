@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('colours', function (Blueprint $table) {
-            $table->text('id')->primary();
-            $table->text('hex');
+            $table->string('id',32)->primary();
+            $table->string('hex',10);
             $table->timestamps();
         });
     }
